@@ -1,0 +1,27 @@
+{
+  "name": "examples-node",
+  "version": "1.0.0",
+  "description": "example app",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrogovets/examples-node-js.git"
+  },
+  "keywords": [
+    "example",
+    "app"
+  ],
+  "author": "Maksym Rohovets <mrogovets@ukr.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrogovets/examples-node-js/issues"
+  },
+  "homepage": "https://github.com/mrogovets/examples-node-js#readme"
+}
