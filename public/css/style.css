@@ -1,0 +1,11 @@
+ body {
+        background-color: aqua;
+      }
+      h1 {
+        color: white;
+        font-size: 2em;
+      }
+      p {
+        color: #fafafa;
+        font-size: 1.1em;
+      }

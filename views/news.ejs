@@ -6,18 +6,21 @@
     <title>News</title>
   </head>
   <body>
-    <h1>News Page ID - <%= newsId %></h1>
-    <p><b>Title:</b><%= obj.title %></p>
-    <p><b>ID:</b><%= obj.id %></p>
-    <p>
-      Proident irure laboris sit eu et eu sunt magna deserunt. Tempor labore
-      occaecat enim excepteur ad sit laboris. Quis ex dolor reprehenderit ad
-      veniam cupidatat eu esse tempor.
-    </p>
-    <ul>
-      <% obj.paragraphs.forEach((item) => {%>
-      <li><%= item %></li>
-      <%}) %>
-    </ul>
+    <%- include ('blocks/header.ejs') %>
+    <div class="block">
+      <h1>News Page ID - <%= newsId %></h1>
+      <p><b>Title:</b><%= obj.title %></p>
+      <p><b>ID:</b><%= obj.id %></p>
+      <p>
+        Proident irure laboris sit eu et eu sunt magna deserunt. Tempor labore
+        occaecat enim excepteur ad sit laboris. Quis ex dolor reprehenderit ad
+        veniam cupidatat eu esse tempor.
+      </p>
+      <ul>
+        <% obj.paragraphs.forEach((item) => {%>
+        <li><%= item %></li>
+        <%}) %>
+      </ul>
+    </div>
   </body>
 </html>
