@@ -3,28 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>About</title>
   </head>
   <body>
     <%- include ('blocks/header.ejs') %>
     <h1>About Page</h1>
-    <p>
-      Deserunt ullamco dolor mollit aliquip voluptate amet eiusmod. Ea magna ea
-      pariatur nostrud. Enim est anim Lorem ipsum veniam nisi sunt cillum
-      reprehenderit et elit consectetur. Lorem tempor Lorem sint fugiat ex
-      fugiat eu dolore proident sunt elit exercitation. Labore pariatur deserunt
-      occaecat consectetur occaecat. Lorem officia aute ipsum cupidatat est esse
-      ullamco est eu ut minim eu dolor. Aute consequat labore voluptate Lorem
-      veniam Lorem laborum tempor mollit consectetur. Enim mollit irure ut
-      dolore excepteur aute. Adipisicing ea tempor aute culpa aliqua deserunt
-      veniam mollit eiusmod velit non. Ea irure pariatur qui ipsum nostrud elit
-      pariatur qui duis enim anim est proident dolor. Eiusmod quis adipisicing
-      duis non consequat fugiat nulla deserunt in commodo eu est tempor quis.
-      Laboris mollit ullamco exercitation dolore nisi proident aliqua do
-      voluptate nisi reprehenderit. Ea ut minim non anim. Aute commodo laborum
-      nostrud nulla magna quis adipisicing sint enim eiusmod esse laboris elit
-      officia. Nostrud exercitation adipisicing ex nisi enim. Quis do pariatur
-      fugiat consequat sint ullamco sint.
-    </p>
+    <form method="POST" action="/about">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" name="check" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </body>
 </html>
